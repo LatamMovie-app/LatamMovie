@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Estilos generales */
+.vh100 {
+  height: 100vh;
+}
+
+.black {
+	color: #000;
+}
+
+.white {
+	color: #fff;
+}
+
+.center {
+  text-align: center;
+}
+
+/* Estilos vista splash */
+.bg-splash {
+  /* background: linear-gradient(to bottom right, rgb(170, 172, 170) 25%, #19191a); */
+  background-color: #000;
+}
+
+.style-title {
+  font-weight: 900;
+  margin-top: 50vh;
+}
