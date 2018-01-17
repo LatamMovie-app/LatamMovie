@@ -9,13 +9,8 @@
   height: 100vh;
 }
 
-.black {
-	color: #000;
-}
-
 /* Estilos vista splash */
 .bg-splash {
-  /* background: linear-gradient(to bottom right, rgb(170, 172, 170) 25%, #19191a); */
   background-color: #000;
   text-align: center;
   color:#FFFF00;
@@ -28,17 +23,33 @@
 }
 
 /* Estilos vista home */
-.search {
-  display: inline-block;
-  clear: both;
-  width: 100px;
+/* .d-flex{
+  margin: 1.5em 1em;
+} */
 
+#menu {
+  border-top: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;
 }
-.d-flex{
-  margin: 20px;
+
+.menu {
+  padding: 0px;
+  overflow: hidden;
 }
-.search-title {
-  outline: none;
+
+/* #menu li {
+  float: left;
+  list-style: none;
+} */
+
+#menu a:link {
+  font-weight: 300;
+  margin: 1em .5em; 
+  text-decoration: none;
+}
+
+#menu li.first {
+  margin-left: 0%;
 }
 
 .bd-slider {
@@ -50,19 +61,7 @@
 
 .bg-header {
   background-color: #000000;
-  padding: 1em .5em;
-}
-
-.signup {
-  background-color: #DC143C;
-  color:#FFFF00;
-  border-radius: 20%;
-  outline: none;
-  box-shadow: unset;
-}
-
-.bg-home {
-  background-color: #000,
+  padding: 1em 1em;
 }
 
 .title-suraMovie {
@@ -70,27 +69,105 @@
   font-weight: 900;
   color:#FFFF00;
   font-size: 30px;
-
-}
-
-/* estilos en movie */
-.mr-auto {
-  background-color: #000;
-
-  color:#FFFF00;
-  font-size: 30px;
 }
 
 /* estilos de lista de peliculas */
-.container {
+.premieres, footer {
   padding-top: 30px;
 }
 
 /* estilos del footer */
-footer {
-  padding-top: 30px;
-}
-
 hr {
   border-color: #fff;
+}
+
+.synopsis {
+  padding: 1em;
+}
+
+/* Estilos inicio de sesión */
+.page-container {
+  margin: 120px auto 0 auto;
+}
+
+.signup {
+  background-color: rgb(228, 22, 63);
+  border-radius: 15%;
+  outline: none;
+  box-shadow: unset;
+}
+
+.login {
+  width: 19em;
+  height: 3em;
+  margin-top: 25px;
+  padding: 0 15px;
+  background: rgba(45,45,45,.13);
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,.9);
+  font-size: 15px;
+  text-shadow: 0 1px 2px rgba(0,0,0,.3);
+  outline: none;
+}
+
+.btn-login {
+  cursor: pointer;
+  width: 18em;
+  height: 3em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  padding: 0;
+  background: #ef4300;
+  border-radius: 6px;
+  border: 1px solid #ff730e;
+  box-shadow: 0 15px 30px 0 rgba(255,255,255,.25) inset, 0 2px 7px 0 rgba(0,0,0,.2);
+  font-weight: 100;
+  text-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+
+.form-control:focus {
+  outline: none;
+}
+
+.title-form {
+  font-size: 30px;
+  font-weight: 700;
+  text-shadow: 0 1px 4px rgba(0,0,0,.2);
+}
+
+.user-form {
+  position: relative;
+  width: 305px;
+  margin: 15px auto 0 auto;
+}
+
+.connect {
+  width: 305px;
+  margin: 35px auto 0 auto;
+  font-size: 18px;
+  font-weight: 700;
+  text-shadow: 0 1px 3px rgba(0,0,0,.2);
+}
+
+.facebook {
+  background: url("../assets/icons/facebook.svg") no-repeat center center;
+}
+
+.google {
+  background: url("../assets/icons/search.svg") no-repeat center center;
+}
+
+.connect a {
+  display: inline-block;
+  width: 32px;
+  height: 35px;
+}
+
+.btn-social {
+  cursor: pointer;
+  height: auto;
+  background: transparent;
+  border-radius: 40%;
+  border: 1px solid rgba(194, 146, 16, 0.829);
+  box-shadow: 0 15px 30px 0 rgba(255,255,255,.25) inset, 0 2px 7px 0 rgba(0,0,0,.2);
 }
