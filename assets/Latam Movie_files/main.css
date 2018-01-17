@@ -11,6 +11,14 @@
 	color: #000;
 }
 
+.white {
+	color: #fff;
+}
+
+.center {
+  text-align: center;
+}
+
 /* Estilos vista splash */
 .bg-splash {
   /* background: linear-gradient(to bottom right, rgb(170, 172, 170) 25%, #19191a); */
@@ -29,34 +37,36 @@
   width: 1em;
 }
 
+/* .img-style {
+  width: 400px;
+  height: 400px;
+} */
+
+/* .items {
+  display: inline-block;
+} */
+
 .search-title {
   outline: none;
 }
 
-.bd-slider {
+.inner-addon {
   position: relative;
-  padding: 1em;
-  margin: 1rem;
-  border: solid #f7f7f9;
 }
-
-.bg-header {
-  background-color: rgb(187, 181, 181);
-  padding: 1em .5em;
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
 }
-
-.signup {
-  background-color: transparent;
-  /* border: 1px solid rgb(245, 170, 31); */
-  /* border-radius: 20%; */
-  outline: none;
-  box-shadow: unset;
+.left-addon .glyphicon {
+  left: 0px;
 }
-
-.bg-home {
-  background-color: #000,
+.right-addon .glyphicon {
+  right: 0px;
 }
-
-.latam-size {
-  font-weight: 900;
+.left-addon input {
+  padding-left: 30px;
+}
+.right-addon input {
+  padding-right: 30px;
 }
