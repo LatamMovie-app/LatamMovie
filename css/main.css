@@ -22,12 +22,9 @@
 }
 
 .style-title {
-  /* font-weight: 900; */
   margin-top: 50vh;
   font-size: 100px;
   font-weight: normal;
-}
-
 }
 
 /* Estilos vista home */
@@ -68,13 +65,14 @@
   background-color: #000,
 }
 
-.title-movieSur {
+.title-suraMovie {
   font-family: 'Righteous', cursive;
   font-weight: 900;
   color:#FFFF00;
   font-size: 30px;
 
 }
+
 /* estilos en movie */
 .mr-auto {
   background-color: #000;
@@ -87,10 +85,12 @@
 .container {
   padding-top: 30px;
 }
+
 /* estilos del footer */
 footer {
   padding-top: 30px;
 }
+
 hr {
   border-color: #fff;
 }
