@@ -10,7 +10,7 @@
 }
 
 .black {
-	color: #000;
+  color: #000;
 }
 
 /* Estilos vista splash */
@@ -76,7 +76,6 @@
 /* estilos en movie */
 .mr-auto {
   background-color: #000;
-
   color:#FFFF00;
   font-size: 30px;
 }
@@ -93,4 +92,8 @@ footer {
 
 hr {
   border-color: #fff;
+}
+
+.synopsis {
+  padding: 1em;
 }
