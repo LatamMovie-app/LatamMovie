@@ -97,3 +97,101 @@ hr {
 .synopsis {
   padding: 1em;
 }
+
+/* Estilos inicio de sesión */
+.bg-sesion {
+  /* background-image: url("../assets/images/sesion.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.page-container {
+  margin: 120px auto 0 auto;
+}
+
+.login {
+  opacity: .9;
+  width: 19em;
+  height: 3em;
+  margin-top: 25px;
+  padding: 0 15px;
+  background: rgba(45,45,45,.13);
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,.9);
+  font-size: 15px;
+  text-shadow: 0 1px 2px rgba(0,0,0,.3);
+  text-align: center;
+  outline: none;
+}
+
+.btn-login {
+  cursor: pointer;
+  width: 21em;
+  height: 3em;
+  margin-top: 25px;
+  margin-bottom: 1em;
+  padding: 0;
+  background: #ef4300;
+  border-radius: 6px;
+  border: 1px solid #ff730e;
+  box-shadow: 0 15px 30px 0 rgba(255,255,255,.25) inset, 0 2px 7px 0 rgba(0,0,0,.2);
+  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+
+.title-form {
+  font-size: 30px;
+  font-weight: 700;
+  text-shadow: 0 1px 4px rgba(0,0,0,.2);
+}
+
+.user-form {
+  position: relative;
+  width: 305px;
+  margin: 15px auto 0 auto;
+  text-align: center;
+}
+
+.connect {
+  width: 305px;
+  margin: 35px auto 0 auto;
+  font-size: 18px;
+  font-weight: 700;
+  text-shadow: 0 1px 3px rgba(0,0,0,.2);
+}
+
+.facebook {
+  background: url("../assets/icons/facebook.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.google {
+  background: url("../assets/icons/search.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.connect a {
+  display: inline-block;
+  width: 32px;
+  height: 35px;
+}
+
+.connect p {
+  color: #000;
+}
+
+.btn-social {
+  cursor: pointer;
+  height: auto;
+  background: transparent;
+  border-radius: 40%;
+  border: 1px solid rgba(194, 146, 16, 0.829);
+  box-shadow: 0 15px 30px 0 rgba(255,255,255,.25) inset, 0 2px 7px 0 rgba(0,0,0,.2);
+  color: #fff;
+}
