@@ -1,12 +1,6 @@
 * {
   box-sizing: border-box;
-  /* font-family: 'Righteous', cursive; */
   font-family: 'Acme', sans-serif;
-}
-
-/* Estilos generales */
-.vh100 {
-  height: 100vh;
 }
 
 /* Estilos vista splash */
@@ -22,46 +16,11 @@
   font-weight: normal;
 }
 
-/* Estilos vista home */
-/* .d-flex{
-  margin: 1.5em 1em;
-} */
-
-#menu {
-  border-top: solid 1px #ccc;
-  border-bottom: solid 1px #ccc;
-}
-
-.menu {
-  padding: 0px;
-  overflow: hidden;
-}
-
-/* #menu li {
-  float: left;
-  list-style: none;
-} */
-
-#menu a:link {
-  font-weight: 300;
-  margin: 1em .5em;
-  text-decoration: none;
-}
-
-#menu li.first {
-  margin-left: 0%;
-}
-
 .bd-slider {
   position: relative;
   padding: 1em;
   margin: 1rem;
   border: solid #f7f7f9;
-}
-
-.bg-header {
-  background-color: #000000;
-  padding: 1em 1em;
 }
 
 .title-suraMovie {
@@ -71,24 +30,25 @@
   font-size: 50px;
 }
 
-/* estilos de lista de peliculas */
+/* Estilos de lista de peliculas */
 .premieres, footer {
   padding-top: 30px;
 }
 
-/* estilos del footer */
+/* Estilos del footer */
 hr {
   border-color: #fff;
 }
 
-/* estilos los select */
+/* Estilos los select */
 .selectItems {
   padding-left: 60em;
 }
 .options {
   margin:5px;
 }
-/* estilos de cada pelicula */
+
+/* Estilos de cada pelicula */
 .poster-img {
   padding: 30px;
   display: flex;
@@ -97,10 +57,12 @@ hr {
   flex-direction: column;
   color: #FF1493;
 }
+
 .portada-img {
   width: 100%;
   height: 40em;
 }
+
 .info {
   padding-left: 20px;
   display: flex;
@@ -109,21 +71,24 @@ hr {
   flex-direction: column;
   color: #FF1493;
 }
+
 /* el trailer */
 .width100 {
   padding-top: 20px;
   width: 70%;
   height: 400px;
 }
+
 /* Estilos de Agenda Cultural */
 .notebook {
   height: 200px;
-
 }
+
 .grad {
   background-color: #E72F78;
   height: 100px;
 }
+
 .banner2 {
   height: 300px;
   width: 1800px
@@ -132,13 +97,6 @@ hr {
 /* Estilos inicio de sesión */
 .page-container {
   margin: 120px auto 0 auto;
-}
-
-.signup {
-  background-color: rgb(228, 22, 63);
-  border-radius: 15%;
-  outline: none;
-  box-shadow: unset;
 }
 
 .login {
@@ -214,4 +172,13 @@ hr {
   border-radius: 40%;
   border: 1px solid rgba(194, 146, 16, 0.829);
   box-shadow: 0 15px 30px 0 rgba(255,255,255,.25) inset, 0 2px 7px 0 rgba(0,0,0,.2);
+}
+
+/* Estilos de fondos y letras*/
+.bg-black {
+  background-color: #000;
+}
+
+.text-white {
+  color: #ffff;
 }
