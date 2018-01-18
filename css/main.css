@@ -9,13 +9,8 @@
   height: 100vh;
 }
 
-.black {
-  color: #000;
-}
-
 /* Estilos vista splash */
 .bg-splash {
-  /* background: linear-gradient(to bottom right, rgb(170, 172, 170) 25%, #19191a); */
   background-color: #000;
   text-align: center;
   color:#FFFF00;
@@ -28,17 +23,33 @@
 }
 
 /* Estilos vista home */
-.search {
-  display: inline-block;
-  clear: both;
-  width: 100px;
+/* .d-flex{
+  margin: 1.5em 1em;
+} */
 
+#menu {
+  border-top: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;
 }
-.d-flex{
-  margin: 20px;
+
+.menu {
+  padding: 0px;
+  overflow: hidden;
 }
-.search-title {
-  outline: none;
+
+/* #menu li {
+  float: left;
+  list-style: none;
+} */
+
+#menu a:link {
+  font-weight: 300;
+  margin: 1em .5em;
+  text-decoration: none;
+}
+
+#menu li.first {
+  margin-left: 0%;
 }
 
 .bd-slider {
@@ -50,68 +61,87 @@
 
 .bg-header {
   background-color: #000000;
-  padding: 1em .5em;
-}
-
-.signup {
-  background-color: #DC143C;
-  color:#FFFF00;
-  border-radius: 20%;
-  outline: none;
-  box-shadow: unset;
-}
-
-.bg-home {
-  background-color: #000,
+  padding: 1em 1em;
 }
 
 .title-suraMovie {
   font-family: 'Righteous', cursive;
   font-weight: 900;
   color:#FFFF00;
-  font-size: 30px;
-
-}
-
-/* estilos en movie */
-.mr-auto {
-  background-color: #000;
-  color:#FFFF00;
-  font-size: 30px;
+  font-size: 50px;
 }
 
 /* estilos de lista de peliculas */
-.container {
+.premieres, footer {
   padding-top: 30px;
 }
 
 /* estilos del footer */
-footer {
-  padding-top: 30px;
-}
-
 hr {
   border-color: #fff;
 }
 
-.synopsis {
-  padding: 1em;
+/* estilos los select */
+.selectItems {
+  padding-left: 60em;
+}
+.options {
+  margin:5px;
+}
+/* estilos de cada pelicula */
+.poster-img {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  color: #FF1493;
+}
+.portada-img {
+  width: 100%;
+  height: 40em;
+}
+.info {
+  padding-left: 20px;
+  display: flex;
+  justify-content: center;
+  /* align-content: center; */
+  flex-direction: column;
+  color: #FF1493;
+}
+/* el trailer */
+.width100 {
+  padding-top: 20px;
+  width: 70%;
+  height: 400px;
+}
+/* Estilos de Agenda Cultural */
+.notebook {
+  height: 200px;
+
+}
+.grad {
+  background-color: #E72F78;
+  height: 100px;
+}
+.banner2 {
+  height: 300px;
+  width: 1800px
 }
 
 /* Estilos inicio de sesión */
-.bg-sesion {
-  /* background-image: url("../assets/images/sesion.jpg"); */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
 .page-container {
   margin: 120px auto 0 auto;
 }
 
+.signup {
+  background-color: rgb(228, 22, 63);
+  border-radius: 15%;
+  outline: none;
+  box-shadow: unset;
+}
+
 .login {
-  opacity: .9;
   width: 19em;
   height: 3em;
   margin-top: 25px;
@@ -121,26 +151,26 @@ hr {
   border: 1px solid rgba(255,255,255,.9);
   font-size: 15px;
   text-shadow: 0 1px 2px rgba(0,0,0,.3);
-  text-align: center;
   outline: none;
 }
 
 .btn-login {
   cursor: pointer;
-  width: 21em;
+  width: 18em;
   height: 3em;
-  margin-top: 25px;
+  margin-top: 2em;
   margin-bottom: 1em;
   padding: 0;
   background: #ef4300;
   border-radius: 6px;
   border: 1px solid #ff730e;
   box-shadow: 0 15px 30px 0 rgba(255,255,255,.25) inset, 0 2px 7px 0 rgba(0,0,0,.2);
-  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
-  font-size: 14px;
   font-weight: 100;
-  color: #fff;
   text-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+
+.form-control:focus {
+  outline: none;
 }
 
 .title-form {
@@ -153,7 +183,6 @@ hr {
   position: relative;
   width: 305px;
   margin: 15px auto 0 auto;
-  text-align: center;
 }
 
 .connect {
@@ -165,25 +194,17 @@ hr {
 }
 
 .facebook {
-  background: url("../assets/icons/facebook.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
+  background: url("../assets/icons/facebook.svg") no-repeat center center;
 }
 
 .google {
-  background: url("../assets/icons/search.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
+  background: url("../assets/icons/search.svg") no-repeat center center;
 }
 
 .connect a {
   display: inline-block;
   width: 32px;
   height: 35px;
-}
-
-.connect p {
-  color: #000;
 }
 
 .btn-social {
@@ -193,5 +214,4 @@ hr {
   border-radius: 40%;
   border: 1px solid rgba(194, 146, 16, 0.829);
   box-shadow: 0 15px 30px 0 rgba(255,255,255,.25) inset, 0 2px 7px 0 rgba(0,0,0,.2);
-  color: #fff;
 }
