@@ -72,12 +72,12 @@ Se está utilizando Trello para el seguimiento de las tareas planificadas. Para 
 
 Se adjuntan los sketch que se elaboraron:
 
-![vista1](assets/images/vista1.jpg "vista1")
+![vista1](assets/docs/vista1.jpg "vista1")
 
-![vista2](assets/images/vista2.jpg "vista2")
+![vista2](assets/docs/vista2.jpg "vista2")
 
-![vista3](assets/images/vista3.jpg "vista3")
+![vista3](assets/docs/vista3.jpg "vista3")
 
-![vista4](assets/images/vista4.jpg "vista4")
+![vista4](assets/docs/vista4.jpg "vista4")
 
-![lista_paises](assets/images/lista_paises.jpg "lista_paises")
+![lista_paises](assets/docs/lista_paises.jpg "lista_paises")
