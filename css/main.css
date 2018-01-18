@@ -68,7 +68,7 @@
   font-family: 'Righteous', cursive;
   font-weight: 900;
   color:#FFFF00;
-  font-size: 30px;
+  font-size: 50px;
 }
 
 /* estilos de lista de peliculas */
@@ -114,6 +114,19 @@ hr {
   padding-top: 20px;
   width: 70%;
   height: 400px;
+}
+/* Estilos de Agenda Cultural */
+.notebook {
+  height: 200px;
+
+}
+.grad {
+  background-color: #E72F78;
+  height: 100px;
+}
+.banner2 {
+  height: 300px;
+  width: 1800px
 }
 
 /* Estilos inicio de sesión */
