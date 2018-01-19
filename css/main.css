@@ -28,16 +28,21 @@
 /* Estilos de Agenda Cultural */
 .notebook {
   height: 200px;
-}
 
+}
 .grad {
   background-color: #E72F78;
   height: 100px;
 }
-
-.banner2 {
+.banner {
   height: 300px;
   width: 1800px
+}
+.card {
+  display: inline-block;
+  margin: 15px;
+  column-width: 20rem;
+  column-count: 4;
 }
 
 /* Estilos inicio de sesión */
@@ -128,4 +133,18 @@
 /* Tamaño de las tarjetas (Vista home) */
 .card-size {
   height: 25%;
+}
+
+/* Carrusel */
+
+.display-in {
+  display: inline-block;
+}
+
+.img-he {
+  height: 300px;
+}
+
+.block-center {
+  text-align: center;
 }
