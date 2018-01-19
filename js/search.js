@@ -13,13 +13,12 @@ function getMovies(searchText) {
     var output = '';
     $.each(movies, function(index, movie) {
       output += `
-      <div class="card-deck col-md-3 offset-md-3">
+      <div class="card-size mb-5 col-6 col-sm-4 col-md-3 col-lg-2">
         <div class="card">
           <img class="card-img-top" src="${movie.Poster}" alt="Card image cap" onclick="movieSelected('${movie.imdbID}')">
           <div class="card-body">
-            <h5 class="card-title">${movie.Title}</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <h6 class="card-title">${movie.Title}</h6>
+            <p class="card-text">${movie.Year}</p>
           </div>
         </div>
       </div>
@@ -46,27 +45,28 @@ function getMovie() {
     var movie = response.data;
     var output = `
       <div class="row">
-        <div class="col-md-4">
-          <img src="${movie.Poster}" alt="" class="thumbnall">
+        <div class="col-sm-4">
+          <img src="${movie.Poster}" alt="" class="img-thumbnail img-fluid">
         </div>
-        <div class="col-md-8">
+        <div class="col-sm-8">
           <h2>${movie.Title}</h2>
-          <ul class="List-group">
-            <li class="List-group-item"><strong>Año</strong> ${movie.Year}</li>
-            <li class="List-group-item"><strong>Género</strong> ${movie.Genre}</li>
-            <li class="List-group-item"><strong>País</strong> ${movie.Country}</li>
-            <li class="List-group-item"><strong>Director</strong> ${movie.Director}</li>
-            <li class="List-group-item"><strong>Reparto</strong> ${movie.Actors}</li>
-          </ul>    
+          <ul class="mt-3 mb-4 List-group">
+            <li class="List-group-item"><strong>Año:</strong> ${movie.Year}</li>
+            <li class="List-group-item"><strong>Género:</strong> ${movie.Genre}</li>
+            <li class="List-group-item"><strong>País:</strong> ${movie.Country}</li>
+            <li class="List-group-item"><strong>Director:</strong> ${movie.Director}</li>
+            <li class="List-group-item"><strong>Reparto:</strong> ${movie.Actors}</li>
+          </ul>
+          <a href="http://imdb.com/title/${movie.imdbID}" target="_blank" class="btn btn-info">Ver IMDB</a>
+          <a href="#" class="btn btn-outline-info">Ver más tarde</a>
+          <a href="#trailer" class="btn btn-outline-info">Trailer</a>
         </div>
       </div>
+      <br>
       <div class="row">
-        <div class="well">
+        <div class="col-md-12">
           <h3>Sinopsis</h3>
           ${movie.Plot}
-          <hr>
-          <a href="http://imdb.com/title/${movie.imdbID}" target="_blank" class="btn btn-primary">View IMDB</a>
-          <a href="index.html" class="btn btn-default"> Go back to search</a>
         </div>
       </div>
     `;

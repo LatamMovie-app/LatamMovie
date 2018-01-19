@@ -11,24 +11,25 @@
   <link rel="stylesheet" href="../css/main.css">
   <title> MovieSur</title>
 </head>
-
-<body class="container-fluid bg-dark">
-  <header class="row bg-header">
-    <div class="mr-auto">
-      <div class="title-suraMovie">SuraMovie</div>
-    </div>
-    <div class="col-auto">
-      <button type="button">Sign up</button>
-    </div>
+<body class="bg-light">
+  <header class="bg-dark">
+    <nav class="navbar justify-content-between">
+      <a class="title-suraMovie" href="home.html">SuraMovie</a>
+      <form class="form-inline">
+        <button class="btn btn-outline-danger my-2 my-sm-0" type="text">Sign up</button>
+      </form>
+    </nav>
   </header>
-
-  <!--vista principal-->
-  <hr>
-  <div class="d-flex selectItems ">
-    <div class="form-group options">
-      <!-- <label for="Select1" class="text-white">Países</label> -->
-      <select class="form-control " id="Select1">
-        <option>Países</option>
+  
+  <!-- Información -->
+  <div>
+    <h4 class="text-center pt-3 pb-3">Explora miles de películas alrededor de América del Sur.</h4>
+  </div>
+  <!-- Sección de filtrado -->
+  <div class="bg-white container-fluid pt-3 pb-3 mb-5">
+    <div class="row d-flex justify-content-center">
+      <select class="custom-select col-3 ml-2 mr-2" id="inputGroupSelect01">
+        <option selected>Todos los países</option>
         <option>Perú</option>
         <option>Argentina</option>
         <option>Bolivia</option>
@@ -36,12 +37,9 @@
         <option>Chile</option>
         <option>Colombia</option>
         <option>Ecuador</option>
-       </select>
-    </div>
-    <div class="form-group options">
-      <!-- <label for="Select2" class="text-white">Géneros</label> -->
-      <select class="form-control" id="Select1">
-        <option>Géneros</option>
+      </select>
+      <select class="custom-select col-3 ml-2 mr-2" id="inputGroupSelect01">
+        <option selected>Todos los géneros</option>
         <option>Acción</option>
         <option>Animación</option>
         <option>Aventura</option>
@@ -59,47 +57,34 @@
         <option>Suspenso</option>
         <option>Terror</option>
       </select>
-    </div>
-    <div class="form-group options">
-      <!-- <label for="Select1" class="text-white">Tipo</label> -->
-      <select class="form-control " id="Select1">
-        <option>Tipo</option>
+      <select class="custom-select col-3 ml-2 mr-2" id="inputGroupSelect01">
+        <option selected>Todos los formatos</option>
         <option>Series</option>
         <option>Peliculas</option>
       </select>
     </div>
+  </div>
 
+  <!-- Sección de películas representativas por país -->
+  <div class="">
+    <h5 class="">TENDENCIAS EN PERÚ</h5>
   </div>
-    <hr>
-  <div class=container-fluid>
-    <div class="row">
-      <div class="peliculas">
-        <p>LAS PELICULASS QUE APARECERAN CON EL API</p>
-        <img class="card-img-top img-fluid" src="../assets/images/peli3.jpg" alt="Card image cap">
-      </div>
-    </div>
+  <div>
+    <h5 class="">TENDENCIAS EN CHILE</h5>
   </div>
-   <!-- footer -->
-  <footer class="container-fluid">
-    <hr>
-    <div class="row justify-content-center">
-      <div class="col-12 text-center text-white">MovieSur
-      <p class="col-12 text-center"></p>
-      </div>
-      <div class="social row align-self-center">
-        <a class="col-6 text-center" href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-        <a class="col-6 text-center" href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
-      </div>
-      <div class="col-12 text-center text-white">Preguntas frecuentes</div>
-      <div class="col-12 text-center text-white">Contáctanos</div>
-    </div>
-    <div class="row justify-content-center">
-      <i class="fa fa-copyright text-white" aria-hidden="true"> 2018</i>
+
+  <!-- footer -->
+  <footer class="bg-dark pt-3 pb-3 mt-5 d-flex justify-content-between">
+    <div class="ml-5 text-white"><i class="fa fa-copyright" aria-hidden="true"></i> SuraMovie 2018</div>
+    <div class="mr-5 text-white">
+      <a class="text-center text-light" href=""><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+      <a class="ml-3 text-center text-light" href=""><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+      <a class="ml-3 text-center text-light" href=""><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
     </div>
   </footer>
+
   <!--Enlaces js-->
   <script src="../vendors/js/jquery-3.2.1.min.js"></script>
   <script src="../vendors/bootstrap-4.0.0-beta.3-dist/js/bootstrap.min.js"></script>
-  <!-- <script type="text/javascript" src="js/app.js"></script> -->
 </body>
 </html>
