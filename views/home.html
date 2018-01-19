@@ -10,27 +10,38 @@
   <link rel="stylesheet" href="../css/main.css">
   <title>SuraMovie</title>
 </head>
-<body class="bg-dark">
+<body class="bg-light">
   <header>
-    <nav class="navbar justify-content-between">
+    <nav class="navbar bg-dark justify-content-between">
       <a class="title-suraMovie" href="home.html">SuraMovie</a>
       <form class="form-inline">
         <button class="btn btn-outline-danger my-2 my-sm-0" type="text">Sign up</button>
       </form>
     </nav>
     <!-- Menú principal-->
-    <nav class="navbar navbar-light bg-black justify-content-between">
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link text-white" href="search.html">Países</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="notebook.html">Agenda Cultural</a>
-        </li>
-      </ul>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-black">
       <form class="form-inline" id="searchForm">
         <input class="form-control mr-sm-2" id="searchText" type="text" placeholder="Buscar..." aria-label="Search">
       </form>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="search.html">Países</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="notebook.html">Agenda Cultural</a>
+          </li>
+        </ul>
+        <span class="navbar-text text-warning">
+          ¡ Explora miles de películas !
+        </span>
+      </div>
     </nav>
   </header>
   <br>
@@ -43,15 +54,14 @@
   <!-- Sección estrenos y los más vistos-->
   <div id="hidden"> <!-- Dentro de este div coloca tus estrenos y demás... -->
     <div>
-      <h5 class="text-light">Estrenos</h5>
+      <h5 class="text-dark">Estrenos</h5>
     </div>
     <div>
-      <h5 class="text-light">Lo más visto</h5>
+      <h5 class="text-dark">Lo más visto</h5>
     </div>
   </div>
 
   <!-- Footer -->
-  <hr class="border-white">
   <footer class="bg-dark pt-3 pb-3 d-flex justify-content-between">
     <div class="ml-5 text-white"><i class="fa fa-copyright" aria-hidden="true"></i> SuraMovie 2018</div>
     <div class="mr-5 text-white">
