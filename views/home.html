@@ -10,27 +10,38 @@
   <link rel="stylesheet" href="../css/main.css">
   <title>SuraMovie</title>
 </head>
-<body class="bg-dark">
+<body class="bg-light">
   <header>
-    <nav class="navbar justify-content-between">
+    <nav class="navbar bg-dark justify-content-between">
       <a class="title-suraMovie" href="home.html">SuraMovie</a>
       <form class="form-inline">
         <button class="btn btn-outline-danger my-2 my-sm-0" type="text">Sign up</button>
       </form>
     </nav>
     <!-- Menú principal-->
-    <nav class="navbar navbar-light bg-black justify-content-between">
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link text-white" href="search.html">Países</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="notebook.html">Agenda Cultural</a>
-        </li>
-      </ul>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-black">
       <form class="form-inline" id="searchForm">
         <input class="form-control mr-sm-2" id="searchText" type="text" placeholder="Buscar..." aria-label="Search">
       </form>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="search.html">Países</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="notebook.html">Agenda Cultural</a>
+          </li>
+        </ul>
+        <span class="navbar-text text-warning">
+          ¡ Explora miles de películas !
+        </span>
+      </div>
     </nav>
   </header>
   <br>
@@ -42,21 +53,94 @@
 
   <!-- Sección estrenos y los más vistos-->
   <div id="hidden"> <!-- Dentro de este div coloca tus estrenos y demás... -->
+    <!-- CARRUSEL------------------------------------------------------------------>
 
+
+     <div class="divSection">
+      <h1 class="let">Estrenos</h1>
+      <div class="div-poster">
+        <div class="image-poster1" >
+          <a id='carou1'class="btn  btn-lg"  data-target="#carou1"></a>
+        </div>
+        <div class="tab1" hidden  >
+          <h3 class="api1"></h3>
+          <p class="year1"></p>
+          <p class="genre1"></p>
+          <p class="director1"></p>
+          <p class="plot1"></p>
+        </div>
+      </div>
+      <div class="div-poster">
+        <div class="image-poster2" >
+           <a id='carou2'class="btn  btn-lg"  data-target="#carou2"></a>
+        </div>
+        <div class="tab2" hidden >
+          <h3 class="api2"></h3>
+          <p class="year2"></p>
+          <p class="genre2"></p>
+          <p class="director2"></p>
+          <p class="plot2"></p>
+        </div>
+      </div>
+      <div class="div-poster">
+        <div class="image-poster3" >
+          <a id='carou3'class="btn  btn-lg"  data-target="#carou3"></a>
+        </div>
+        <div class="tab3" hidden  >
+          <h3 class="api3"></h3>
+          <p class="year3"></p>
+          <p class="genre3"></p>
+          <p class="director3"></p>
+          <p class="plot3"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="divSection">
+    <br>
+     <h1 class="let">Los mas Vistos</h1>
+     <br>
+     <div class="div-poster">
+       <div class="image-poster4" >
+         <a id='carou4'class="btn  btn-lg"  data-target="#carou4"></a>
+       </div>
+       <div class="tab4" hidden  >
+         <h3 class="api4">
+         </h3>
+       </div>
+     </div>
+     <div class="div-poster">
+       <div class="image-poster5" >
+          <a id='carou5'class="btn  btn-lg"  data-target="#carou5"></a>
+       </div>
+       <div class="tab5" hidden >
+         <h3 class="api5"></h3>
+         <span class="year"></span>
+         <span class="plop"></span>
+       </div>
+     </div>
+     <div class="div-poster">
+       <div class="image-poster6" >
+         <a id='carou6'class="btn  btn-lg"  data-target="#carou6"></a>
+       </div>
+       <div class="tab6" hidden  >
+         <h3 class="api6">
+         </h3>
+       </div>
+     </div>
+    </div>
+
+
+    <!-- CARRUSEL final----------------------------------------------->
   </div>
 
   <!-- Footer -->
-  <footer class="container-fluid">
-    <div class="row justify-content-center">
-      <div class="social row align-self-center">
-        <a class="col-6 text-center" href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-        <a class="col-6 text-center" href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
-      </div>
-      <div class="col-12 text-center text-white">Preguntas frecuentes</div>
-      <div class="col-12 text-center text-white">Contáctanos</div>
-    </div>
-    <div class="row justify-content-center">
-      <i class="fa fa-copyright text-white" aria-hidden="true"> SuraMovie 2018</i>
+  <footer class="bg-dark pt-3 pb-3 d-flex justify-content-between">
+    <div class="ml-5 text-white"><i class="fa fa-copyright" aria-hidden="true"></i> SuraMovie 2018</div>
+    <div class="mr-5 text-white">
+      <a class="text-center text-light" href=""><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+      <a class="ml-3 text-center text-light" href=""><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+      <a class="ml-3 text-center text-light" href=""><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
     </div>
   </footer>
 
