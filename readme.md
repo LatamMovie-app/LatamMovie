@@ -31,8 +31,24 @@ En la sección "Anexos" se adjunta el resumen de la encuesta realizada a 5 usuar
 | Tarea | Tiempo | Encargadas |
 | :------- | :------: | -----: |
 | Daily | 08:15 a 09:00 | Todo el equipo |
-| Maquetado | 09:00 en 11:00 | Lesly N. y Zulema A. |
-| Elaborar una base de datos con parsehub| 09:00 en 11:00 | Rocci E. y Silvia F. |
+| Maquetado | 09:00 en 10:50 | Lesly N. y Zulema A. |
+| Elaborar una base de datos con parsehub| 09:00 en 10:50 | Rocci E. y Silvia F. |
+| 1era Exposición | 10:50 en 11:10 | Todo el equipo |
+| Retrospectiva de la exposición | 11:10 en 12:00 | Todo el equipo |
+| Maquetado | 12:00 en adelante | Lesly N. y Zulema A. |
+| Investigación y uso sobre API OMDb | 12:00 en adelante | Rocci E. y Silvia F. |
+
+* Día jueves 18 de enero del 2018
+
+| Tarea | Tiempo | Encargadas |
+| :------- | :------: | -----: |
+| Daily | 08:15 a 09:00 | Todo el equipo |
+| Maquetado | 09:00 en 10:00 | Lesly N. y Zulema A. |
+| Funcionalidad para la búsqueda de películas | 09:00 en 18:00 | Rocci E.|
+| Funcionalidad para carrusel con info de las películas | 09:00 en adelante | Silvia F.|
+| Maquetado | 10:00 en adelante | Zulema A. |
+| Funcionalidad para registrarse y iniciar sesión | 10:00 en adelante | Lesly N.|
+| Maquetado | 18:00 en adelante | Rocci E.|
 
 Se está utilizando Trello para el seguimiento de las tareas planificadas. Para ver el tablero, dar click [aquí](https://trello.com/b/BQ8OvwAq/suramovie "Tablero-trello").
 
