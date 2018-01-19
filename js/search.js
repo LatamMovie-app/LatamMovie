@@ -9,11 +9,11 @@ $(document).ready(function() {
 var output = '';
 
 function getMovies(searchText) {
-  axios.get('http://www.omdbapi.com/?s=' + searchText + '&apikey=3a181f1c').then(function(response) {
+  axios.get('https://www.omdbapi.com/?s=' + searchText + '&apikey=3a181f1c').then(function(response) {
     var movies = response.data.Search;
 
     $.each(movies, function(index, movie) {
-      axios.get('http://www.omdbapi.com/?i=' + `${movie.imdbID}` + '&apikey=3a181f1c').then(function(response) {
+      axios.get('https://www.omdbapi.com/?i=' + `${movie.imdbID}` + '&apikey=3a181f1c').then(function(response) {
         // console.log(response.data.Country);
         var country = response.data.Country;  
         var countries = ['Argentina', 'Bolivia', 'Brazil', 'Chile', 'Colombia', 'Ecuador', 'Peru'];
@@ -52,7 +52,7 @@ function movieSelected(id) {
 function getMovie() {
   var movieId = sessionStorage.getItem('movieId');
 
-  axios.get('http://www.omdbapi.com/?i=' + movieId + '&apikey=3a181f1c').then(function(response) {
+  axios.get('https://www.omdbapi.com/?i=' + movieId + '&apikey=3a181f1c').then(function(response) {
     console.log(response);
     var movie = response.data;
     var output = `
@@ -69,7 +69,7 @@ function getMovie() {
             <li class="List-group-item"><strong>Director:</strong> ${movie.Director}</li>
             <li class="List-group-item"><strong>Reparto:</strong> ${movie.Actors}</li>
           </ul>
-          <a href="http://imdb.com/title/${movie.imdbID}" target="_blank" class="btn btn-info">Ver IMDB</a>
+          <a href="https://imdb.com/title/${movie.imdbID}" target="_blank" class="btn btn-info">Ver IMDB</a>
           <a href="#" class="btn btn-outline-info">Ver más tarde</a>
           <a href="#trailer" class="btn btn-outline-info">Trailer</a>
         </div>
