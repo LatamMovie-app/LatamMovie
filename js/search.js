@@ -6,26 +6,38 @@ $(document).ready(function() {
   });    
 });
 
+var output = '';
+
 function getMovies(searchText) {
   axios.get('http://www.omdbapi.com/?s=' + searchText + '&apikey=3a181f1c').then(function(response) {
-    console.log(response);
     var movies = response.data.Search;
-    var output = '';
-    $.each(movies, function(index, movie) {
-      output += `
-      <div class="card-size mb-5 col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="card">
-          <img class="card-img-top" src="${movie.Poster}" alt="Card image cap" onclick="movieSelected('${movie.imdbID}')">
-          <div class="card-body">
-            <h6 class="card-title">${movie.Title}</h6>
-            <p class="card-text">${movie.Year}</p>
-          </div>
-        </div>
-      </div>
-      `;
-    });
 
-    $('#movies').html(output);
+    $.each(movies, function(index, movie) {
+      axios.get('http://www.omdbapi.com/?i=' + `${movie.imdbID}` + '&apikey=3a181f1c').then(function(response) {
+        // console.log(response.data.Country);
+        var country = response.data.Country;  
+        var countries = ['Argentina', 'Bolivia', 'Brazil', 'Chile', 'Colombia', 'Ecuador', 'Peru'];
+        
+        for (var i = 0; i < countries.length; i++) {
+          if (country === countries[i]) {
+
+            output += `
+            <div class="card-size mb-5 col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="card">
+                <img class="card-img-top" src="${movie.Poster}" alt="Imagen No Disponible" onclick="movieSelected('${movie.imdbID}')">
+                <div class="card-body">
+                  <h6 class="card-title">${movie.Title}</h6>
+                  <p class="card-text">${movie.Year}</p>
+                </div>
+              </div>
+            </div>
+            `;
+            $('#movies').html(output);  
+          }          
+        }        
+      });
+    });    
+    var output = '';
   }).catch(function(error) {
     console.log(error);
   });
