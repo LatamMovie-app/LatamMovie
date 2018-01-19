@@ -77,195 +77,58 @@ function getMovie() {
 }
 
 // CARRUSEL-------------
+var randonMovieArray = ['Peloteros', 'Pantaleón y las visitadoras', 'Piratas en el Callao', 'Asu Mare'];
 function apicall() {
-  $.getJSON('https://www.omdbapi.com/?t=' + encodeURI('Asu Mare') + '&apikey=91013cb1').then(function(response) {
-    /* console.log(response.Poster);*/
-    var image = response.Poster;
-    console.log(image);
-    var title = response.Title;
-    console.log(title);
-    var year = response.Year;
-    var director = response.Director;
-    var language = response.Language;
-    var genre = response.Genre;
-    var actors = response.Actors;
-    var plot = response.Plot;
-    console.log(image);
-    var carou1 = $('#carou1');
-    var divPoster = $('<img src="image" class="poster">');
-    carou1.append(divPoster);
-    divPoster.attr('src', image);
-    $('.api1').append(title);
-    $('.year1').append(year);
-    $('.genre1').append(genre);
-    $('.director1').append('Director: ' + director);
-    $('.plot').append(plot);
+  var divSection = $('#divSection');
+  for (var i = 0; i < randonMovieArray.length; i++) {
+    var randonMovie = randonMovieArray[i];
 
+    $(document).on('click', function(event) {
+      if ($(event.target).hasClass('modalEvent')) {
+        var movieID = $(event.target).attr('id');
+        $.getJSON('https://www.omdbapi.com/?i=' + movieID + '&apikey=91013cb1').then(function(response) {
+          console.log(response.Title);
+        });
+        console.log($(event.target).attr('id'));
+      }
+    });
 
-    $('#carou1').click(function() {
-      $('.image-poster1').attr('hidden', true);
-      $('.tab1').attr('hidden', false);
-    });
-    $('.tab1').click(function() {
-      $('.tab1').attr('hidden', true);
-      $('.image-poster1').attr('hidden', false);
-    });
-  }); // $.getJASON
+    $.getJSON('https://www.omdbapi.com/?t=' + encodeURI(randonMovie) + '&apikey=91013cb1').then(function(response) {
+      var image = response.Poster;
+      var title = response.Title;
+      var year = response.Year;
+      var director = response.Director;
+      var language = response.Language;
+      var genre = response.Genre;
+      var actors = response.Actors;
+      var plot = response.Plot;
+      var id = response.imdbID;
+      /* modal button*/
+      var aModal = $('<a class="modalEvent btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"></a>');
+      divSection.append(aModal);
+      console.log(aModal);
 
-  $.getJSON('https://www.omdbapi.com/?t=' + encodeURI('Desierto') + '&apikey=91013cb1').then(function(response) {
-    /* console.log(response.Poster);*/
-    var image = response.Poster;
-    console.log(image);
-    var title = response.Title;
-    console.log(title);
-    var year = response.Year;
-    var director = response.Director;
-    var language = response.Language;
-    var genre = response.Genre;
-    var actors = response.Actors;
-    var plot = response.Plot;
-    console.log(image);
-    var carou2 = $('#carou2');
-    var divPoster = $('<img src="image" class="poster">');
-    carou2.append(divPoster);
-    divPoster.attr('src', image);
-    var api2 = $('.api2');
-    api2.append(title);
-    $('.year2').append(year);
-    $('.genre2').append(genre);
-    $('.director2').append('Director: ' + director);
-    $('.plot').append(plot);
-    $('#carou2').click(function() {
-      $('.image-poster2').attr('hidden', true);
-      $('.tab2').attr('hidden', false);
-    });
-    $('.tab2').click(function() {
-      $('.tab2').attr('hidden', true);
-      $('.image-poster2').attr('hidden', false);
-    });
-  }); // $.getJASON
+      var divMovie = $('<div class="div-movie"></div>');
+      aModal.append(divMovie);
 
-  $.getJSON('https://www.omdbapi.com/?t=' + encodeURI('Amor') + '&apikey=91013cb1').then(function(response) {
-    /* console.log(response.Poster);*/
-    var image = response.Poster;
-    console.log(image);
-    var title = response.Title;
-    console.log(title);
-    var year = response.Year;
-    var director = response.Director;
-    var language = response.Language;
-    var genre = response.Genre;
-    var actors = response.Actors;
-    var plot = response.Plot;
-    console.log(image);
-    var carou3 = $('#carou3');
-    var divPoster = $('<img src="image" class="poster">');
-    carou3.append(divPoster);
-    divPoster.attr('src', image);
-    var api3 = $('.api3');
-    api3.append(title);
-    $('#carou3').click(function() {
-      $('.image-poster3').attr('hidden', true);
-      $('.tab3').attr('hidden', false);
-    });
-    $('.tab3').click(function() {
-      $('.tab3').attr('hidden', true);
-      $('.image-poster3').attr('hidden', false);
-    });
-  }); // $.getJASON
+      var divImage = $('<div class="div-image"></div>');
+      divMovie.append(divImage);
+      var poster = $('<img src="image" class="poster">');
+      divImage.append(poster);
+      poster.attr('src', image);
 
-  // mas vistos-------------------------------------------------------------------------
+      var divContentMovie = $('<div class="div-text div-content-movie"></div>');
+      divMovie.append(divContentMovie);
 
-  $.getJSON('https://www.omdbapi.com/?t=' + encodeURI('Peloteros') + '&apikey=91013cb1').then(function(response) {
-    /* console.log(response.Poster);*/
-    var image = response.Poster;
-    console.log(image);
-    var title = response.Title;
-    console.log(title);
-    var year = response.Year;
-    var director = response.Director;
-    var language = response.Language;
-    var genre = response.Genre;
-    var actors = response.Actors;
-    var plot = response.Plot;
-    console.log(image);
-    var carou4 = $('#carou4');
-    var divPoster = $('<img src="image" class="poster">');
-    carou4.append(divPoster);
-    divPoster.attr('src', image);
-    $('.api1').append(title);
-    $('.year3').append(year);
-    $('.genre3').append(genre);
-    $('.director3').append('Director: ' + director);
-    $('.plot').append(plot);
-    var api4 = $('.api4');
-    api4.append(title);
-    $('#carou4').click(function() {
-      $('.image-poster4').attr('hidden', true);
-      $('.tab4').attr('hidden', false);
-    });
-    $('.tab4').click(function() {
-      $('.tab4').attr('hidden', true);
-      $('.image-poster4').attr('hidden', false);
-    });
-  }); // $.getJASON
-
-  $.getJSON('https://www.omdbapi.com/?t=' + encodeURI('Pantaleón y las visitadoras') + '&apikey=91013cb1').then(function(response) {
-    /* console.log(response.Poster);*/
-    var image = response.Poster;
-    console.log(image);
-    var title = response.Title;
-    console.log(title);
-    var year = response.Year;
-    var director = response.Director;
-    var language = response.Language;
-    var genre = response.Genre;
-    var actors = response.Actors;
-    var plot = response.Plot;
-    console.log(image);
-    var carou5 = $('#carou5');
-    var divPoster = $('<img src="image" class="poster">');
-    carou5.append(divPoster);
-    divPoster.attr('src', image);
-    var api5 = $('.api5');
-    api5.append(title);
-    $('#carou5').click(function() {
-      $('.image-poster5').attr('hidden', true);
-      $('.tab5').attr('hidden', false);
-    });
-    $('.tab5').click(function() {
-      $('.tab5').attr('hidden', true);
-      $('.image-poster5').attr('hidden', false);
-    });
-  }); // $.getJASON
-
-  $.getJSON('https://www.omdbapi.com/?t=' + encodeURI('Piratas en el Callao') + '&apikey=91013cb1').then(function(response) {
-    /* console.log(response.Poster);*/
-    var image = response.Poster;
-    console.log(image);
-    var title = response.Title;
-    console.log(title);
-    var year = response.Year;
-    var director = response.Director;
-    var language = response.Language;
-    var genre = response.Genre;
-    var actors = response.Actors;
-    var plot = response.Plot;
-    console.log(image);
-    var carou6 = $('#carou6');
-    var divPoster = $('<img src="image" class="poster">');
-    carou6.append(divPoster);
-    divPoster.attr('src', image);
-    var api6 = $('.api6');
-    api6.append(title);
-    $('#carou6').click(function() {
-      $('.image-poster6').attr('hidden', true);
-      $('.tab6').attr('hidden', false);
-    });
-    $('.tab6').click(function() {
-      $('.tab6').attr('hidden', true);
-      $('.image-poster6').attr('hidden', false);
-    });
-  }); // $.getJASON
+      var titleMovie = $('<div class="div-text title-movie"></div>');
+      divContentMovie.append(titleMovie);
+      titleMovie.append(title);
+      aModal.click(function() {
+        $('.modal-body').append('Title: ' + title);
+        $('.modal-body').append('; year: ' + year);
+        $('.modal-body').append('; sinopsis: ' + plot);
+      });
+    });// ---- $.getJASON
+  } // for
 } // --- apicall()
 apicall();
