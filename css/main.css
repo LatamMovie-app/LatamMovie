@@ -28,16 +28,21 @@
 /* Estilos de Agenda Cultural */
 .notebook {
   height: 200px;
-}
 
+}
 .grad {
   background-color: #E72F78;
   height: 100px;
 }
-
-.banner2 {
+.banner {
   height: 300px;
   width: 1800px
+}
+.card {
+  display: inline-block;
+  margin: 15px;
+  column-width: 20rem;
+  column-count: 4;
 }
 
 /* Estilos inicio de sesión */
@@ -130,34 +135,16 @@
   height: 25%;
 }
 
+/* Carrusel */
 
-/*-----------------------CARRUSEL-------------------------------*/
-.divSection{
-  text-align: center;
-  background: rgba(13, 13, 13, 0.85);
-}
-.let{
-  color: white;
-
-  background:  rgb(111, 22, 54);
-}
-.tab1, .tab2, .tab3{
-  width: 300px;
-  height: 400px;
-  background: grey;
-  position: relative;
-  top: -130px;
-
-}
-.div-poster{
+.display-in {
   display: inline-block;
 }
-.poster{
-  height: 400px;
-  width: 300px;
-  border: 2px solid rgba(210, 186, 20, 0.73);
+
+.img-he {
+  height: 300px;
 }
 
-.div-poster{
-  background:
+.block-center {
+  text-align: center;
 }
