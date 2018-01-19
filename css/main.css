@@ -77,16 +77,21 @@ hr {
 /* Estilos de Agenda Cultural */
 .notebook {
   height: 200px;
-}
 
+}
 .grad {
   background-color: #E72F78;
   height: 100px;
 }
-
-.banner2 {
+.banner {
   height: 300px;
   width: 1800px
+}
+.card {
+  display: inline-block;
+  margin: 15px;
+  column-width: 20rem;
+  column-count: 4;
 }
 
 /* Estilos inicio de sesión */
@@ -182,7 +187,7 @@ hr {
   #movies .col-md-3 .well {
     height: 390px;
   }
-  
+
   #movies .col-md-3 img {
     height: 248px;
   }
