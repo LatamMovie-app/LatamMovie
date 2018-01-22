@@ -54,7 +54,7 @@ Se está utilizando Trello para el seguimiento de las tareas planificadas. Para 
 
 **PRODUCTO MÍNIMO VIABLE**
 
-* Que el usuario pueda buscar series o películas por su título.	
+* Que el usuario pueda buscar series o películas por su título.
 * Que al dar click en el tab “Países” se muestre una nueva vista con tres tipos de filtros: Género, País y tipo de formato (Serie o película).
 * Que al dar click en el tab “Agenda cultural” se muestre una nueva vista con información sobre eventos, festivales de cine, convocatorias a concursos de cortometrajes, premiaciones, reproducciones al aire libre, etc.
 * Que al dar click en cada poster de serie/película se despliegue una nueva vista con la información específica y la opción de reproducir la serie/película.
@@ -64,19 +64,19 @@ Se está utilizando Trello para el seguimiento de las tareas planificadas. Para 
 **ANEXOS**
 
 **ENCUESTA:**
-1.	¿Usas alguna aplicación para poder ver películas online? 
+1.	¿Usas alguna aplicación para poder ver películas online?
 
-* 4 de los encuestados usan NETFLIX y piensan que el pago es excesivo. 
+* 4 de los encuestados usan NETFLIX y piensan que el pago es excesivo.
 * Uno de los entrevistados menciona que ve películas online de páginas no seguras.
 
-2.	¿Con qué frecuencia las usas? 
+2.	¿Con qué frecuencia las usas?
 
 * 4 de los encuestados ven películas todos los días.
 * Uno de los entrevistados sólo puede ver películas los fines de semana.
 
 3.	¿Qué impacto tendría en ti el usar una aplicación en la que te proporcionen películas producidas en América del Sur?
 
-* A tres de los encuestados les agradó la idea porque van a poder conocer películas producidas en la región que no son muy difundidas. 
+* A tres de los encuestados les agradó la idea porque van a poder conocer películas producidas en la región que no son muy difundidas.
 * A dos de los encuestados no les agradó la idea porque preferirían tener acceso a películas de todas partes del mundo.
 
 4.	¿Qué te gustaría encontrar en una aplicación sobre películas?
@@ -97,3 +97,13 @@ Se adjuntan los sketch que se elaboraron:
 ![vista4](assets/docs/vista4.jpg "vista4")
 
 ![lista_paises](assets/docs/lista_paises.jpg "lista_paises")
+
+Prototipos:
+
+![vista1](assets/docs/sketch1.PNG "vista1")
+
+![vista2](assets/docs/sketch2.PNG "vista2")
+
+![vista3](assets/docs/sketch3.PNG "vista3")
+
+![vista4](assets/docs/sketch4.PNG "vista4")
